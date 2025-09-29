@@ -1,0 +1,36 @@
+{
+  "name": "engagehub-platform",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "docker:build": "docker build -t engagehub-platform .",
+    "docker:run": "docker run -p 3000:3000 engagehub-platform",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "cmdk": "^1.0.0",
+    "framer-motion": "^11.3.31",
+    "lucide-react": "^0.542.0",
+    "next": "14.2.7",
+    "next-auth": "^4.24.11",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-icons": "^5.3.0",
+    "recharts": "^2.12.7",
+    "tailwind-merge": "^2.5.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.11",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.7",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}
