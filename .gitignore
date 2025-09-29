@@ -28,6 +28,12 @@ yarn-error.log*
 # local env files
 .env*.local
 
+# environment files (contain sensitive data)
+.env
+.env.local
+.env.production
+.env.staging
+
 # vercel
 .vercel
 
@@ -39,3 +45,6 @@ next-env.d.ts
 *.md
 !README.md
 APB info session transcript
+
+# text files (ignore all .txt files)
+*.txt

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useSession } from 'next-auth/react';
-import { useRouter } from 'next/navigation';
+import { useRouter, useSearchParams } from 'next/navigation';
 import { apiService, User } from '@/services/api';
 
 // Shared hook to eliminate duplicate profile API calls across pages
@@ -8,12 +8,22 @@ import { apiService, User } from '@/services/api';
 export const useOnboardingCheck = () => {
   const { data: session, status } = useSession();
   const router = useRouter();
+  const searchParams = useSearchParams();
   const [userProfile, setUserProfile] = useState<User | null>(null);
   const [isCheckingOnboarding, setIsCheckingOnboarding] = useState(true);
 
   useEffect(() => {
     const checkOnboardingStatus = async () => {
       if (status === "loading") return;
+      
+      // Check for demo mode - skip all onboarding checks
+      const isDemoMode = searchParams.get('demo') === 'true';
+      if (isDemoMode) {
+        console.log('🎯 Demo mode active - skipping onboarding checks');
+        setUserProfile({ onboarding_completed: true } as User);
+        setIsCheckingOnboarding(false);
+        return;
+      }
       
       if (status === "unauthenticated" || !session?.user) {
         router.push("/");
@@ -55,7 +65,7 @@ export const useOnboardingCheck = () => {
     };
 
     checkOnboardingStatus();
-  }, [session, status, router, isCheckingOnboarding]);
+  }, [session, status, router, isCheckingOnboarding, searchParams]);
 
   return {
     userProfile,

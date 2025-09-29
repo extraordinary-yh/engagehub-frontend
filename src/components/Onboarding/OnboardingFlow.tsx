@@ -1,6 +1,6 @@
 'use client';
-import { useState } from 'react';
-import { useRouter } from 'next/navigation';
+import { useState, useEffect } from 'react';
+import { useRouter, useSearchParams } from 'next/navigation';
 import { DiscordLinking } from './DiscordLinking';
 import { ConsentAgreement } from './ConsentAgreement';
 import { LinkedInFollow } from './LinkedInFollow';
@@ -11,8 +11,17 @@ interface OnboardingFlowProps {
 
 export const OnboardingFlow = ({ userName }: OnboardingFlowProps) => {
   const router = useRouter();
+  const searchParams = useSearchParams();
   const [currentStep, setCurrentStep] = useState<'discord' | 'consent' | 'linkedin' | 'complete'>('discord');
   const [consentAccepted, setConsentAccepted] = useState<boolean | null>(null);
+
+  // Check for demo mode - skip all onboarding steps
+  useEffect(() => {
+    if (searchParams.get('demo') === 'true') {
+      console.log('🎯 Demo mode detected - skipping onboarding');
+      router.push('/dashboard?demo=true');
+    }
+  }, [searchParams, router]);
 
   const handleDiscordComplete = () => {
     setCurrentStep('consent');

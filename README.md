@@ -125,6 +125,16 @@ A powerful full-stack community engagement platform that transforms how communit
 
 ## 🚀 Getting Started
 
+### Quick Demo
+
+Want to see the platform immediately without setup?
+
+```
+http://localhost:3000/?demo=true
+```
+
+Demo mode skips all verification and onboarding steps, providing instant access to the full dashboard. Perfect for presentations and showcases! See [DEMO_MODE.md](./DEMO_MODE.md) for details.
+
 ### Prerequisites
 
 - Node.js 18+ and npm/yarn
@@ -396,13 +406,6 @@ The application includes a `Dockerfile` and `render.yaml` for deployment:
 - [NextAuth.js Documentation](https://next-auth.js.org/) - Authentication framework
 - [Performance Optimization Guide](./PERFORMANCE_OPTIMIZATION_COMPLETE.md) - Performance best practices
 - [Frontend Backend Integration](./FRONTEND_BACKEND_INTEGRATION_COMPLETE.md) - API integration details
-
-## 🆘 Support
-
-For support and questions:
-- Check the [Backend Integration Guide](./BACKEND_INTEGRATION.md)
-- Review the [Student Portal Design](./Student%20Portal%20Design.md)
-- Open an issue on GitHub
 
 ## 🎯 Platform Impact
 
