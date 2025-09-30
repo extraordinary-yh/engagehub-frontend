@@ -7,6 +7,12 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)](https://www.typescriptlang.org/)
 [![Deployed on Vercel](https://img.shields.io/badge/Deployed-Vercel-black)](https://engagehub-gamify.vercel.app/?stable=true)
 
+<p align="center">
+  <a href="https://engagehub-gamify.vercel.app/?stable=true">
+    <img src="assets/launch-demo.svg" alt="Launch Demo" width="420">
+  </a>
+</p>
+
 ---
 
 ## 🎯 Technical Overview
