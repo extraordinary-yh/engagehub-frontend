@@ -285,7 +285,7 @@ This platform addresses **real market needs** across multiple industries:
 ## 🚀 Getting Started
 
 ### 🌐 **Live Demo (Recommended)**
-Visit the hosted version: **[engagehub-gamify.vercel.app/?stable=true](https://engagehub-gamify.vercel.app/?stable=true)**
+**[Visit the hosted version](https://engagehub-gamify.vercel.app/?stable=true)**
 
 No setup required - see the platform in action immediately!
 
@@ -314,42 +314,6 @@ npm run dev
 
 # Open http://localhost:3000
 ```
-
-#### Development Modes
-
-**1. Demo Mode** (No backend required)
-```
-http://localhost:3000/?demo=true
-```
-Skips authentication and onboarding for instant access.
-
-**2. Stable Mode** (Uses snapshots)
-```
-http://localhost:3000/?stable=true
-```
-Uses frozen API data - perfect for demos and testing.
-
-**3. Normal Mode** (Requires backend)
-```
-http://localhost:3000
-```
-Full functionality with live Django backend integration.
-
-### 📸 Snapshot System
-
-Protect against backend changes and enable offline development:
-
-```bash
-# Record current API state (requires backend running)
-npm run snapshot:record
-
-# Use stable mode (no API calls)
-# Frontend uses recorded snapshots
-```
-
-See [SNAPSHOT_QUICKSTART.md](./SNAPSHOT_QUICKSTART.md) for details.
-
----
 
 ## 🧪 Testing & Quality Assurance
 
@@ -514,9 +478,9 @@ This project represents **real-world problem-solving** and demonstrates the abil
 
 ## 📞 Contact & Links
 
-- **Live Demo:** [engagehub-gamify.vercel.app/?stable=true](https://engagehub-gamify.vercel.app/?stable=true)
-- **GitHub Repository:** [github.com/extraordinary-yh/points-system-frontend](https://github.com/extraordinary-yh/points-system-frontend)
-- **Backend Repository:** Django REST API (separate repository)
+- **[Live Demo](https://engagehub-gamify.vercel.app/?stable=true)**
+- **GitHub Repository:** [github.com/extraordinary-yh/points-system-frontend](https://github.com/extraordinary-yh/engagehub-frontend)
+- **Backend Repository:** [Django REST API](https://github.com/extraordinary-yh/engagehub-backend-bot)
 
 ---
 
