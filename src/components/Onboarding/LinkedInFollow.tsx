@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { useSession } from 'next-auth/react';
 import { apiService } from '../../services/api';
-import engagehubLogo from '../../assets/images/engagehub-logo.jpg';
+import engagehubLogo from '../../assets/images/engagehub-logo.png';
 import ceoProfile from '../../assets/images/ceo-profile.jpg';
 
 interface LinkedInFollowProps {

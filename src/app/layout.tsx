@@ -5,7 +5,7 @@ import { AuthWrapper } from "../components/AuthWrapper";
 import { SidebarProvider } from "../contexts/SidebarContext";
 import { ReLoginPrompt } from "../components/Auth/ReLoginPrompt";
 import { SystemStatus } from "../components/SystemStatus";
-import engagehubLogo from "../assets/images/engagehub-logo.jpg";
+import engagehubLogo from "../assets/images/engagehub-logo.png";
 
 const inter = Inter({ subsets: ["latin"] });
 
