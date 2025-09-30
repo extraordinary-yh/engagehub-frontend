@@ -1,11 +1,12 @@
 'use client';
+import { Suspense } from "react";
 import { Dashboard } from "@/components/Dashboard/Dashboard";
 import { Sidebar } from "@/components/Sidebar/Sidebar";
 import { useSidebar } from "@/contexts/SidebarContext";
 import { useOnboardingCheck } from "@/hooks/useOnboardingCheck";
 import { useSharedDashboardData } from "@/hooks/useSharedDashboardData";
 
-export default function DashboardPage() {
+function DashboardContent() {
   const { userProfile, isLoading } = useOnboardingCheck();
   const { isCollapsed } = useSidebar();
   const { isLoading: dataLoading, activityFeed, timelineData, dashboardStats } = useSharedDashboardData();
@@ -34,5 +35,17 @@ export default function DashboardPage() {
         <Dashboard />
       </div>
     </main>
+  );
+}
+
+export default function DashboardPage() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen flex items-center justify-center bg-stone-100">
+        <div className="text-xl text-stone-600">Loading dashboard...</div>
+      </div>
+    }>
+      <DashboardContent />
+    </Suspense>
   );
 }

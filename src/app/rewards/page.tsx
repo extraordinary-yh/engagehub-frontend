@@ -1,6 +1,6 @@
 'use client';
 import { useSession } from "next-auth/react";
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import { Sidebar } from "@/components/Sidebar/Sidebar";
 import { SidebarProvider, useSidebar } from "@/contexts/SidebarContext";
 import { apiService, User, Incentive, Redemption } from "@/services/api";
@@ -9,7 +9,7 @@ import { refreshDashboardData } from "@/hooks/useSharedDashboardData";
 import { refreshStatCards } from "@/components/Dashboard/StatCards";
 import { Lock, Check, Gift, Trophy, Star, Heart, Zap, Award } from "lucide-react";
 
-export default function RewardsPage() {
+function RewardsContent() {
   const { data: session } = useSession();
   const { userProfile, isLoading } = useOnboardingCheck();
   const { isCollapsed } = useSidebar();
@@ -35,13 +35,25 @@ export default function RewardsPage() {
     }`}>
       <Sidebar />
       <div className="bg-white rounded-lg pb-4 shadow h-full overflow-y-auto">
-        <RewardsContent />
+        <RewardsContentComponent />
       </div>
     </main>
   );
 }
 
-const RewardsContent = () => {
+export default function RewardsPage() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen flex items-center justify-center bg-stone-100">
+        <div className="text-xl text-stone-600">Loading rewards...</div>
+      </div>
+    }>
+      <RewardsContent />
+    </Suspense>
+  );
+}
+
+const RewardsContentComponent = () => {
   const { data: session } = useSession();
   const [rewards, setRewards] = useState<Incentive[]>([]);
   const [redemptionHistory, setRedemptionHistory] = useState<Redemption[]>([]);

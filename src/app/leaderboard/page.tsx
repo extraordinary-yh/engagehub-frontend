@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Suspense } from 'react';
 import { FiAward, FiUsers, FiTrendingUp, FiTrendingDown, FiMinus } from 'react-icons/fi';
 import { apiService, LeaderboardData, LeaderboardEntry } from '../../services/api';
 import { useSession } from 'next-auth/react';
@@ -8,7 +8,7 @@ import { Sidebar } from '@/components/Sidebar/Sidebar';
 import { useSidebar } from '@/contexts/SidebarContext';
 import { useOnboardingCheck } from '@/hooks/useOnboardingCheck';
 
-const LeaderboardPage = () => {
+const LeaderboardContent = () => {
   const { data: session, status } = useSession();
   const { userProfile, isLoading } = useOnboardingCheck();
   const { isCollapsed } = useSidebar();
@@ -527,6 +527,18 @@ const LeaderboardPage = () => {
         </div>
       </div>
     </main>
+  );
+};
+
+const LeaderboardPage = () => {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen flex items-center justify-center bg-stone-100">
+        <div className="text-xl text-stone-600">Loading leaderboard...</div>
+      </div>
+    }>
+      <LeaderboardContent />
+    </Suspense>
   );
 };
 

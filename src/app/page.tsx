@@ -1,7 +1,7 @@
 'use client';
 import { useSession, signIn } from "next-auth/react";
 import { useRouter, useSearchParams } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useState, Suspense } from "react";
 import { AuthPage } from "@/components/Auth/AuthPage";
 import { apiService, User } from "@/services/api";
 
@@ -11,7 +11,7 @@ const DEMO_CREDENTIALS = {
   password: 'yuehantest'
 };
 
-export default function Home() {
+function HomeContent() {
   const { data: session, status } = useSession();
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -162,4 +162,16 @@ export default function Home() {
 
   // Show auth page for unauthenticated users
   return <AuthPage />;
+}
+
+export default function Home() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen flex items-center justify-center bg-stone-100">
+        <div className="text-xl text-stone-600">Loading...</div>
+      </div>
+    }>
+      <HomeContent />
+    </Suspense>
+  );
 }

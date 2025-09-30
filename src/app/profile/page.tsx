@@ -1,5 +1,5 @@
 'use client';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import { Sidebar } from "@/components/Sidebar/Sidebar";
 import { useSidebar } from "@/contexts/SidebarContext";
 import { useOnboardingCheck } from "@/hooks/useOnboardingCheck";
@@ -8,7 +8,7 @@ import { PasswordChangeForm } from "@/components/Profile/PasswordChangeForm";
 import { DiscordStatus } from "@/components/Profile/DiscordStatus";
 import { User } from "@/services/api";
 
-export default function ProfilePage() {
+function ProfileContent() {
   const { userProfile, isLoading } = useOnboardingCheck();
   const { isCollapsed } = useSidebar();
   const [currentUser, setCurrentUser] = useState<User | null>(null);
@@ -95,5 +95,17 @@ export default function ProfilePage() {
         </div>
       </div>
     </main>
+  );
+}
+
+export default function ProfilePage() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen flex items-center justify-center bg-stone-100">
+        <div className="text-xl text-stone-600">Loading profile...</div>
+      </div>
+    }>
+      <ProfileContent />
+    </Suspense>
   );
 }
