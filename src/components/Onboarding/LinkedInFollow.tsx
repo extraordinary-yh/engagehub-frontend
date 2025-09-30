@@ -8,7 +8,7 @@ interface LinkedInFollowProps {
   onComplete: () => void;
 }
 
-export const LinkedInFollow = ({ userName, onComplete }: LinkedInFollowProps) => {
+export const LinkedInFollow = ({ userName, onComplete }: LinkedInFollowProps): JSX.Element => {
   const [followedCompany, setFollowedCompany] = useState(false);
   const [followedFounder, setFollowedFounder] = useState(false);
   const { data: session } = useSession();
