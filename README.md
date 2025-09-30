@@ -1,6 +1,6 @@
 # 🚀 EngageHub - Full-Stack Community Engagement Platform
 
-> **🌐 [VIEW LIVE DEMO →](https://engagehub-gamify.vercel.app/?stable=true)**  
+
 > A production-ready SaaS platform showcasing enterprise-grade architecture, performance optimization, and modern web development practices.
 
 [![Next.js](https://img.shields.io/badge/Next.js-14-black)](https://nextjs.org/)
