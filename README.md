@@ -19,6 +19,83 @@
 
 EngageHub is a **full-stack community engagement platform** that demonstrates advanced software engineering practices, scalable architecture, and production-ready development. This project showcases expertise in modern web development, performance optimization, state management, and building complex user-facing applications.
 
+### 🏗️ System Architecture
+
+```mermaid
+graph TB
+    %% User Interactions
+    Users["`👥 **Users via Browser**
+    Web Interface Access`"]
+    Admins["`👨‍💼 **Admins via Django Admin UI**
+    Administrative Control Panel`"]
+    
+    %% Frontend Layer
+    subgraph Frontend[" "]
+        FrontendTitle["`☁️ **Frontend Deployment - Vercel Cloud Platform**`"]
+        NextJS["`⚛️ **Next.js Frontend**
+        React 18 • TypeScript • Tailwind • 🚀 Vercel`"]
+        FrontendTitle ~~~ NextJS
+    end
+    
+    %% Backend Container
+    subgraph Backend[" "]
+        BackendTitle["`🐳 **Render.com Container - Cloud Infrastructure**`"]
+        Django["`🐍 **Django Backend**
+        Python • REST API • JWT Auth • ⚙️ gunicorn`"]
+        DB[("`🗄️ **PostgreSQL Database**
+        Relational Data Storage • ☁️ Supabase`")]
+        DiscordBot["`🤖 **Discord Bot**
+        Python • Real-time Integration • 📄 bot.py`"]
+        BackendTitle ~~~ Django
+        BackendTitle ~~~ DB
+        BackendTitle ~~~ DiscordBot
+    end
+    
+    %% External Services
+    DiscordServer["`💬 **Discord Server**
+    External Communication Platform`"]
+    
+    %% User Connections
+    Users -.->|"`HTTP/JWT
+    Authenticated Requests`"| NextJS
+    Admins -.->|"`HTTP/JWT
+    Admin Interface`"| NextJS
+    Admins -.->|"`Django Admin UI
+    Direct Management`"| Django
+    
+    %% Frontend to Backend
+    NextJS <==>|"`HTTP/JWT
+    RESTful API Communication`"| Django
+    
+    %% Backend to Database
+    Django ==>|"`ORM
+    Object-Relational Mapping`"| DB
+    DiscordBot ==>|"`ORM
+    Data Persistence`"| DB
+    
+    %% Discord Integration
+    DiscordBot <==>|"`Discord API
+    Real-time Events & Commands`"| DiscordServer
+    
+    %% Modern Styling with Premium Colors
+    classDef userStyle fill:#667eea,stroke:#5a67d8,stroke-width:3px,color:#fff
+    classDef frontendStyle fill:#4facfe,stroke:#3182ce,stroke-width:3px,color:#fff
+    classDef backendStyle fill:#43e97b,stroke:#2d7d32,stroke-width:3px,color:#000
+    classDef databaseStyle fill:#fa709a,stroke:#e91e63,stroke-width:3px,color:#000
+    classDef externalStyle fill:#a8edea,stroke:#9c27b0,stroke-width:3px,color:#000
+    classDef containerStyle fill:#2d3748,stroke:#1a202c,stroke-width:4px,color:#fff
+    classDef titleStyle fill:#1a202c,stroke:#4a5568,stroke-width:2px,color:#fff
+    
+    %% Apply styles
+    class Users,Admins userStyle
+    class NextJS frontendStyle
+    class Django,DiscordBot backendStyle
+    class DB databaseStyle
+    class DiscordServer externalStyle
+    class Frontend,Backend containerStyle
+    class FrontendTitle,BackendTitle titleStyle
+```
+
 ---
 
 ## 💼 Why This Project Stands Out
