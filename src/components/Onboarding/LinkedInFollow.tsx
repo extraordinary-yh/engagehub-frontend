@@ -2,6 +2,8 @@
 import React, { useState } from 'react';
 import { useSession } from 'next-auth/react';
 import { apiService } from '../../services/api';
+import engagehubLogo from '../../assets/images/engagehub-logo.jpg';
+import ceoProfile from '../../assets/images/ceo-profile.jpg';
 
 interface LinkedInFollowProps {
   userName?: string;
@@ -61,7 +63,7 @@ export function LinkedInFollow({ userName, onComplete }: LinkedInFollowProps): J
             <div className="flex items-center space-x-4 mb-4">
               <div className="w-16 h-16 rounded-lg overflow-hidden bg-white border-2 border-stone-200">
                 <img 
-                  src="/images/engagehub-logo.jpg" 
+                  src={engagehubLogo.src} 
                   alt="EngageHub Logo" 
                   className="w-full h-full object-cover"
                   onError={(e) => {
@@ -112,7 +114,7 @@ export function LinkedInFollow({ userName, onComplete }: LinkedInFollowProps): J
             <div className="flex items-center space-x-4 mb-4">
               <div className="w-16 h-16 rounded-full overflow-hidden bg-white border-2 border-stone-200">
                 <img 
-                  src="/images/ceo-profile.jpg" 
+                  src={ceoProfile.src} 
                   alt="Sebastien François - EngageHub CEO" 
                   className="w-full h-full object-cover"
                   onError={(e) => {
