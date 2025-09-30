@@ -13,8 +13,6 @@
 
 EngageHub is a **full-stack community engagement platform** that demonstrates advanced software engineering practices, scalable architecture, and production-ready development. This project showcases expertise in modern web development, performance optimization, state management, and building complex user-facing applications.
 
-### 🌟 **Live Application**: [engagehub-gamify.vercel.app/?stable=true](https://engagehub-gamify.vercel.app/?stable=true)
-
 ---
 
 ## 💼 Why This Project Stands Out
