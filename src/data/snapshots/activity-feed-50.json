@@ -1,0 +1,393 @@
+{
+  "feed": [
+    {
+      "id": "activity_2685",
+      "type": "activity",
+      "timestamp": "2025-09-30T02:49:44.367379+00:00",
+      "points_change": 5,
+      "description": "Completed: Discord Activity",
+      "details": {
+        "activity_name": "Discord Activity",
+        "activity_category": "engagement",
+        "points_earned": 5
+      }
+    },
+    {
+      "id": "activity_2625",
+      "type": "activity",
+      "timestamp": "2025-09-25T03:32:22.464133+00:00",
+      "points_change": 2,
+      "description": "Completed: Like/Interaction",
+      "details": {
+        "activity_name": "Like/Interaction",
+        "activity_category": "engagement",
+        "points_earned": 2
+      }
+    },
+    {
+      "id": "activity_2623",
+      "type": "activity",
+      "timestamp": "2025-09-25T02:47:25.899485+00:00",
+      "points_change": 25,
+      "description": "Completed: Thoughtful Reply",
+      "details": {
+        "activity_name": "Thoughtful Reply",
+        "activity_category": "engagement",
+        "points_earned": 25
+      }
+    },
+    {
+      "id": "activity_2622",
+      "type": "activity",
+      "timestamp": "2025-09-25T02:25:05.198066+00:00",
+      "points_change": 2,
+      "description": "Completed: Like/Interaction",
+      "details": {
+        "activity_name": "Like/Interaction",
+        "activity_category": "engagement",
+        "points_earned": 2
+      }
+    },
+    {
+      "id": "activity_2621",
+      "type": "activity",
+      "timestamp": "2025-09-25T02:20:22.940790+00:00",
+      "points_change": 5,
+      "description": "Completed: Discord Activity",
+      "details": {
+        "activity_name": "Discord Activity",
+        "activity_category": "engagement",
+        "points_earned": 5
+      }
+    },
+    {
+      "id": "redemption_9",
+      "type": "redemption",
+      "timestamp": "2025-09-24T02:50:55.182953+00:00",
+      "points_change": -35,
+      "description": "Redeemed: ATS Optimization Guide",
+      "details": {
+        "reward_name": "ATS Optimization Guide",
+        "points_spent": 35,
+        "status": "pending"
+      }
+    },
+    {
+      "id": "activity_2607",
+      "type": "activity",
+      "timestamp": "2025-09-17T19:58:18.457481+00:00",
+      "points_change": 3,
+      "description": "Completed: Resource Share",
+      "details": {
+        "activity_name": "Resource Share",
+        "activity_category": "content",
+        "points_earned": 3
+      }
+    },
+    {
+      "id": "activity_2605",
+      "type": "activity",
+      "timestamp": "2025-09-17T03:34:38.022183+00:00",
+      "points_change": 1,
+      "description": "Completed: LinkedIn Post",
+      "details": {
+        "activity_name": "LinkedIn Post",
+        "activity_category": "social",
+        "points_earned": 1
+      }
+    },
+    {
+      "id": "activity_2604",
+      "type": "activity",
+      "timestamp": "2025-09-17T03:02:27.717783+00:00",
+      "points_change": 1,
+      "description": "Completed: Discord Activity",
+      "details": {
+        "activity_name": "Discord Activity",
+        "activity_category": "engagement",
+        "points_earned": 1
+      }
+    },
+    {
+      "id": "activity_2603",
+      "type": "activity",
+      "timestamp": "2025-09-17T03:02:27.490594+00:00",
+      "points_change": 1,
+      "description": "Completed: Discord Activity",
+      "details": {
+        "activity_name": "Discord Activity",
+        "activity_category": "engagement",
+        "points_earned": 1
+      }
+    },
+    {
+      "id": "activity_2602",
+      "type": "activity",
+      "timestamp": "2025-09-16T23:38:47.532956+00:00",
+      "points_change": 10,
+      "description": "Completed: Event Attendance",
+      "details": {
+        "activity_name": "Event Attendance",
+        "activity_category": "events",
+        "points_earned": 10
+      }
+    },
+    {
+      "id": "activity_2601",
+      "type": "activity",
+      "timestamp": "2025-09-16T23:33:45.598906+00:00",
+      "points_change": 5,
+      "description": "Completed: Resource Share",
+      "details": {
+        "activity_name": "Resource Share",
+        "activity_category": "content",
+        "points_earned": 5
+      }
+    },
+    {
+      "id": "activity_2600",
+      "type": "activity",
+      "timestamp": "2025-09-16T23:18:38.735233+00:00",
+      "points_change": 5,
+      "description": "Completed: LinkedIn Post",
+      "details": {
+        "activity_name": "LinkedIn Post",
+        "activity_category": "social",
+        "points_earned": 5
+      }
+    },
+    {
+      "id": "activity_2599",
+      "type": "activity",
+      "timestamp": "2025-09-16T22:41:35.673579+00:00",
+      "points_change": 1,
+      "description": "Completed: Resource Share",
+      "details": {
+        "activity_name": "Resource Share",
+        "activity_category": "content",
+        "points_earned": 1
+      }
+    },
+    {
+      "id": "activity_2598",
+      "type": "activity",
+      "timestamp": "2025-09-16T22:40:56.425901+00:00",
+      "points_change": 1,
+      "description": "Completed: Resource Share",
+      "details": {
+        "activity_name": "Resource Share",
+        "activity_category": "content",
+        "points_earned": 1
+      }
+    },
+    {
+      "id": "activity_2596",
+      "type": "activity",
+      "timestamp": "2025-09-16T22:09:07.751463+00:00",
+      "points_change": 1,
+      "description": "Completed: Discord Activity",
+      "details": {
+        "activity_name": "Discord Activity",
+        "activity_category": "engagement",
+        "points_earned": 1
+      }
+    },
+    {
+      "id": "activity_2540",
+      "type": "activity",
+      "timestamp": "2025-09-08T19:11:26.103418+00:00",
+      "points_change": 5,
+      "description": "Completed: LinkedIn Post",
+      "details": {
+        "activity_name": "LinkedIn Post",
+        "activity_category": "social",
+        "points_earned": 5
+      }
+    },
+    {
+      "id": "activity_2539",
+      "type": "activity",
+      "timestamp": "2025-09-08T18:26:41.000901+00:00",
+      "points_change": 5,
+      "description": "Completed: LinkedIn Post",
+      "details": {
+        "activity_name": "LinkedIn Post",
+        "activity_category": "social",
+        "points_earned": 5
+      }
+    },
+    {
+      "id": "activity_2538",
+      "type": "activity",
+      "timestamp": "2025-09-08T17:21:50.843354+00:00",
+      "points_change": 10,
+      "description": "Completed: Resource Share",
+      "details": {
+        "activity_name": "Resource Share",
+        "activity_category": "content",
+        "points_earned": 10
+      }
+    },
+    {
+      "id": "activity_2535",
+      "type": "activity",
+      "timestamp": "2025-09-04T01:16:15.930909+00:00",
+      "points_change": 10,
+      "description": "Completed: Resource Share",
+      "details": {
+        "activity_name": "Resource Share",
+        "activity_category": "content",
+        "points_earned": 10
+      }
+    },
+    {
+      "id": "activity_2534",
+      "type": "activity",
+      "timestamp": "2025-09-01T00:00:00+00:00",
+      "points_change": 5,
+      "description": "Completed: LinkedIn Post",
+      "details": {
+        "activity_name": "LinkedIn Post",
+        "activity_category": "social",
+        "points_earned": 5
+      }
+    },
+    {
+      "id": "activity_2533",
+      "type": "activity",
+      "timestamp": "2025-08-31T00:00:00+00:00",
+      "points_change": 5,
+      "description": "Completed: LinkedIn Post",
+      "details": {
+        "activity_name": "LinkedIn Post",
+        "activity_category": "social",
+        "points_earned": 5
+      }
+    },
+    {
+      "id": "activity_2532",
+      "type": "activity",
+      "timestamp": "2025-08-30T00:00:00+00:00",
+      "points_change": 5,
+      "description": "Completed: LinkedIn Post",
+      "details": {
+        "activity_name": "LinkedIn Post",
+        "activity_category": "social",
+        "points_earned": 5
+      }
+    },
+    {
+      "id": "activity_2531",
+      "type": "activity",
+      "timestamp": "2025-08-27T00:00:00+00:00",
+      "points_change": 5,
+      "description": "Completed: LinkedIn Post",
+      "details": {
+        "activity_name": "LinkedIn Post",
+        "activity_category": "social",
+        "points_earned": 5
+      }
+    },
+    {
+      "id": "activity_2530",
+      "type": "activity",
+      "timestamp": "2025-08-25T00:00:00+00:00",
+      "points_change": 15,
+      "description": "Completed: Volunteer Work",
+      "details": {
+        "activity_name": "Volunteer Work",
+        "activity_category": "engagement",
+        "points_earned": 15
+      }
+    },
+    {
+      "id": "activity_2529",
+      "type": "activity",
+      "timestamp": "2025-08-24T00:00:00+00:00",
+      "points_change": 15,
+      "description": "Completed: Volunteer Work",
+      "details": {
+        "activity_name": "Volunteer Work",
+        "activity_category": "engagement",
+        "points_earned": 15
+      }
+    },
+    {
+      "id": "activity_2528",
+      "type": "activity",
+      "timestamp": "2025-08-23T00:00:00+00:00",
+      "points_change": 10,
+      "description": "Completed: Resource Share",
+      "details": {
+        "activity_name": "Resource Share",
+        "activity_category": "content",
+        "points_earned": 10
+      }
+    },
+    {
+      "id": "activity_2527",
+      "type": "activity",
+      "timestamp": "2025-08-22T00:00:00+00:00",
+      "points_change": 10,
+      "description": "Completed: Resource Share",
+      "details": {
+        "activity_name": "Resource Share",
+        "activity_category": "content",
+        "points_earned": 10
+      }
+    },
+    {
+      "id": "activity_2526",
+      "type": "activity",
+      "timestamp": "2025-08-18T00:00:00+00:00",
+      "points_change": 15,
+      "description": "Completed: Event Attendance",
+      "details": {
+        "activity_name": "Event Attendance",
+        "activity_category": "events",
+        "points_earned": 15
+      }
+    },
+    {
+      "id": "activity_2525",
+      "type": "activity",
+      "timestamp": "2025-08-17T00:00:00+00:00",
+      "points_change": 15,
+      "description": "Completed: Event Attendance",
+      "details": {
+        "activity_name": "Event Attendance",
+        "activity_category": "events",
+        "points_earned": 15
+      }
+    },
+    {
+      "id": "activity_2524",
+      "type": "activity",
+      "timestamp": "2025-08-15T00:00:00+00:00",
+      "points_change": 20,
+      "description": "Completed: Resume Upload",
+      "details": {
+        "activity_name": "Resume Upload",
+        "activity_category": "professional",
+        "points_earned": 20
+      }
+    },
+    {
+      "id": "activity_2523",
+      "type": "activity",
+      "timestamp": "2025-08-13T00:00:00+00:00",
+      "points_change": 20,
+      "description": "Completed: Resume Upload",
+      "details": {
+        "activity_name": "Resume Upload",
+        "activity_category": "professional",
+        "points_earned": 20
+      }
+    }
+  ],
+  "total_items": 32,
+  "is_lifetime_data": false,
+  "limit_applied": 50,
+  "total_activities": 31,
+  "total_redemptions": 1
+}

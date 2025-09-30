@@ -1,0 +1,129 @@
+{
+  "timeline": [
+    {
+      "date": "2025-07-02",
+      "points_earned": 0,
+      "points_redeemed": 0,
+      "net_points": 0,
+      "cumulative_points": 0,
+      "activities_count": 0,
+      "redemptions_count": 0
+    },
+    {
+      "date": "2025-07-09",
+      "points_earned": 0,
+      "points_redeemed": 0,
+      "net_points": 0,
+      "cumulative_points": 0,
+      "activities_count": 0,
+      "redemptions_count": 0
+    },
+    {
+      "date": "2025-07-16",
+      "points_earned": 0,
+      "points_redeemed": 0,
+      "net_points": 0,
+      "cumulative_points": 0,
+      "activities_count": 0,
+      "redemptions_count": 0
+    },
+    {
+      "date": "2025-07-23",
+      "points_earned": 0,
+      "points_redeemed": 0,
+      "net_points": 0,
+      "cumulative_points": 0,
+      "activities_count": 0,
+      "redemptions_count": 0
+    },
+    {
+      "date": "2025-07-30",
+      "points_earned": 0,
+      "points_redeemed": 0,
+      "net_points": 0,
+      "cumulative_points": 0,
+      "activities_count": 0,
+      "redemptions_count": 0
+    },
+    {
+      "date": "2025-08-06",
+      "points_earned": 0,
+      "points_redeemed": 0,
+      "net_points": 0,
+      "cumulative_points": 0,
+      "activities_count": 0,
+      "redemptions_count": 0
+    },
+    {
+      "date": "2025-08-13",
+      "points_earned": 70,
+      "points_redeemed": 0,
+      "net_points": 70,
+      "cumulative_points": 70,
+      "activities_count": 4,
+      "redemptions_count": 0
+    },
+    {
+      "date": "2025-08-20",
+      "points_earned": 50,
+      "points_redeemed": 0,
+      "net_points": 50,
+      "cumulative_points": 120,
+      "activities_count": 4,
+      "redemptions_count": 0
+    },
+    {
+      "date": "2025-08-27",
+      "points_earned": 20,
+      "points_redeemed": 0,
+      "net_points": 20,
+      "cumulative_points": 140,
+      "activities_count": 4,
+      "redemptions_count": 0
+    },
+    {
+      "date": "2025-09-03",
+      "points_earned": 30,
+      "points_redeemed": 0,
+      "net_points": 30,
+      "cumulative_points": 170,
+      "activities_count": 4,
+      "redemptions_count": 0
+    },
+    {
+      "date": "2025-09-10",
+      "points_earned": 23,
+      "points_redeemed": 0,
+      "net_points": 23,
+      "cumulative_points": 193,
+      "activities_count": 6,
+      "redemptions_count": 0
+    },
+    {
+      "date": "2025-09-17",
+      "points_earned": 6,
+      "points_redeemed": 0,
+      "net_points": 6,
+      "cumulative_points": 199,
+      "activities_count": 4,
+      "redemptions_count": 0
+    },
+    {
+      "date": "2025-09-24",
+      "points_earned": 39,
+      "points_redeemed": 35,
+      "net_points": 4,
+      "cumulative_points": 203,
+      "activities_count": 5,
+      "redemptions_count": 1
+    }
+  ],
+  "summary": {
+    "total_days": 90,
+    "total_points_earned": 238,
+    "total_points_redeemed": 35,
+    "net_points_change": 203,
+    "average_daily_points": 2.6,
+    "most_active_date": "2025-08-13"
+  }
+}

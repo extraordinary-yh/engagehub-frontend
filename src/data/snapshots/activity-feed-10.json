@@ -1,0 +1,129 @@
+{
+  "feed": [
+    {
+      "id": "activity_2685",
+      "type": "activity",
+      "timestamp": "2025-09-30T02:49:44.367379+00:00",
+      "points_change": 5,
+      "description": "Completed: Discord Activity",
+      "details": {
+        "activity_name": "Discord Activity",
+        "activity_category": "engagement",
+        "points_earned": 5
+      }
+    },
+    {
+      "id": "activity_2625",
+      "type": "activity",
+      "timestamp": "2025-09-25T03:32:22.464133+00:00",
+      "points_change": 2,
+      "description": "Completed: Like/Interaction",
+      "details": {
+        "activity_name": "Like/Interaction",
+        "activity_category": "engagement",
+        "points_earned": 2
+      }
+    },
+    {
+      "id": "activity_2623",
+      "type": "activity",
+      "timestamp": "2025-09-25T02:47:25.899485+00:00",
+      "points_change": 25,
+      "description": "Completed: Thoughtful Reply",
+      "details": {
+        "activity_name": "Thoughtful Reply",
+        "activity_category": "engagement",
+        "points_earned": 25
+      }
+    },
+    {
+      "id": "activity_2622",
+      "type": "activity",
+      "timestamp": "2025-09-25T02:25:05.198066+00:00",
+      "points_change": 2,
+      "description": "Completed: Like/Interaction",
+      "details": {
+        "activity_name": "Like/Interaction",
+        "activity_category": "engagement",
+        "points_earned": 2
+      }
+    },
+    {
+      "id": "activity_2621",
+      "type": "activity",
+      "timestamp": "2025-09-25T02:20:22.940790+00:00",
+      "points_change": 5,
+      "description": "Completed: Discord Activity",
+      "details": {
+        "activity_name": "Discord Activity",
+        "activity_category": "engagement",
+        "points_earned": 5
+      }
+    },
+    {
+      "id": "redemption_9",
+      "type": "redemption",
+      "timestamp": "2025-09-24T02:50:55.182953+00:00",
+      "points_change": -35,
+      "description": "Redeemed: ATS Optimization Guide",
+      "details": {
+        "reward_name": "ATS Optimization Guide",
+        "points_spent": 35,
+        "status": "pending"
+      }
+    },
+    {
+      "id": "activity_2607",
+      "type": "activity",
+      "timestamp": "2025-09-17T19:58:18.457481+00:00",
+      "points_change": 3,
+      "description": "Completed: Resource Share",
+      "details": {
+        "activity_name": "Resource Share",
+        "activity_category": "content",
+        "points_earned": 3
+      }
+    },
+    {
+      "id": "activity_2605",
+      "type": "activity",
+      "timestamp": "2025-09-17T03:34:38.022183+00:00",
+      "points_change": 1,
+      "description": "Completed: LinkedIn Post",
+      "details": {
+        "activity_name": "LinkedIn Post",
+        "activity_category": "social",
+        "points_earned": 1
+      }
+    },
+    {
+      "id": "activity_2604",
+      "type": "activity",
+      "timestamp": "2025-09-17T03:02:27.717783+00:00",
+      "points_change": 1,
+      "description": "Completed: Discord Activity",
+      "details": {
+        "activity_name": "Discord Activity",
+        "activity_category": "engagement",
+        "points_earned": 1
+      }
+    },
+    {
+      "id": "activity_2603",
+      "type": "activity",
+      "timestamp": "2025-09-17T03:02:27.490594+00:00",
+      "points_change": 1,
+      "description": "Completed: Discord Activity",
+      "details": {
+        "activity_name": "Discord Activity",
+        "activity_category": "engagement",
+        "points_earned": 1
+      }
+    }
+  ],
+  "total_items": 10,
+  "is_lifetime_data": false,
+  "limit_applied": 10,
+  "total_activities": 9,
+  "total_redemptions": 1
+}

@@ -1,0 +1,286 @@
+{
+  "count": 31,
+  "results": [
+    {
+      "id": 2685,
+      "points_earned": 5,
+      "timestamp": "2025-09-30T02:49:44.367379+00:00",
+      "details": "Message sent",
+      "activity__name": "Discord Activity",
+      "activity__category": "engagement",
+      "activity__points_value": 5
+    },
+    {
+      "id": 2625,
+      "points_earned": 2,
+      "timestamp": "2025-09-25T03:32:22.464133+00:00",
+      "details": "Liking/interacting",
+      "activity__name": "Like/Interaction",
+      "activity__category": "engagement",
+      "activity__points_value": 2
+    },
+    {
+      "id": 2623,
+      "points_earned": 25,
+      "timestamp": "2025-09-25T02:47:25.899485+00:00",
+      "details": "Thoughtful reply approved: This is very thoughful of a reply",
+      "activity__name": "Thoughtful Reply",
+      "activity__category": "engagement",
+      "activity__points_value": 25
+    },
+    {
+      "id": 2622,
+      "points_earned": 2,
+      "timestamp": "2025-09-25T02:25:05.198066+00:00",
+      "details": "Liking/interacting",
+      "activity__name": "Like/Interaction",
+      "activity__category": "engagement",
+      "activity__points_value": 2
+    },
+    {
+      "id": 2621,
+      "points_earned": 5,
+      "timestamp": "2025-09-25T02:20:22.940790+00:00",
+      "details": "Message sent",
+      "activity__name": "Discord Activity",
+      "activity__category": "engagement",
+      "activity__points_value": 5
+    },
+    {
+      "id": 2607,
+      "points_earned": 3,
+      "timestamp": "2025-09-17T19:58:18.457481+00:00",
+      "details": "Resource approved: this is a good resource that I'm sharing",
+      "activity__name": "Resource Share",
+      "activity__category": "content",
+      "activity__points_value": 15
+    },
+    {
+      "id": 2605,
+      "points_earned": 1,
+      "timestamp": "2025-09-17T03:34:38.022183+00:00",
+      "details": "LinkedIn update approved: LinkedIn URL: https://www.linkedin.com/in/username\nDescription: this is a very good linkedin descrip",
+      "activity__name": "LinkedIn Post",
+      "activity__category": "social",
+      "activity__points_value": 50
+    },
+    {
+      "id": 2604,
+      "points_earned": 1,
+      "timestamp": "2025-09-17T03:02:27.717783+00:00",
+      "details": "Message sent",
+      "activity__name": "Discord Activity",
+      "activity__category": "engagement",
+      "activity__points_value": 5
+    },
+    {
+      "id": 2603,
+      "points_earned": 1,
+      "timestamp": "2025-09-17T03:02:27.490594+00:00",
+      "details": "Message sent",
+      "activity__name": "Discord Activity",
+      "activity__category": "engagement",
+      "activity__points_value": 5
+    },
+    {
+      "id": 2602,
+      "points_earned": 10,
+      "timestamp": "2025-09-16T23:38:47.532956+00:00",
+      "details": "Event approved: \"Attended the comprehensive Python workshop that taught web scraping with beautiful soup and requests libraries\"\n\nImage: Screenshot_2025-09-15_at_12.32.03_PM.png (10995 bytes): User claims to have attended an event",
+      "activity__name": "Event Attendance",
+      "activity__category": "events",
+      "activity__points_value": 20
+    },
+    {
+      "id": 2601,
+      "points_earned": 5,
+      "timestamp": "2025-09-16T23:33:45.598906+00:00",
+      "details": "Resource approved: Found this comprehensive Python tutorial that teaches web scraping with beautiful soup and requests ",
+      "activity__name": "Resource Share",
+      "activity__category": "content",
+      "activity__points_value": 15
+    },
+    {
+      "id": 2600,
+      "points_earned": 5,
+      "timestamp": "2025-09-16T23:18:38.735233+00:00",
+      "details": "LinkedIn update approved: LinkedIn URL: https://linkedin.com/posts/123456789\nDescription: \"Liked and commented on P2E's latest",
+      "activity__name": "LinkedIn Post",
+      "activity__category": "social",
+      "activity__points_value": 50
+    },
+    {
+      "id": 2599,
+      "points_earned": 1,
+      "timestamp": "2025-09-16T22:41:35.673579+00:00",
+      "details": "Resource approved: Failed to submit resource to backend. Please try again later.",
+      "activity__name": "Resource Share",
+      "activity__category": "content",
+      "activity__points_value": 15
+    },
+    {
+      "id": 2598,
+      "points_earned": 1,
+      "timestamp": "2025-09-16T22:40:56.425901+00:00",
+      "details": "Resource approved: Failed to submit resource to backend. Please try again later.",
+      "activity__name": "Resource Share",
+      "activity__category": "content",
+      "activity__points_value": 15
+    },
+    {
+      "id": 2596,
+      "points_earned": 1,
+      "timestamp": "2025-09-16T22:09:07.751463+00:00",
+      "details": "Liking/interacting",
+      "activity__name": "Discord Activity",
+      "activity__category": "engagement",
+      "activity__points_value": 5
+    },
+    {
+      "id": 2540,
+      "points_earned": 5,
+      "timestamp": "2025-09-08T19:11:26.103418+00:00",
+      "details": "LinkedIn update",
+      "activity__name": "LinkedIn Post",
+      "activity__category": "social",
+      "activity__points_value": 50
+    },
+    {
+      "id": 2539,
+      "points_earned": 5,
+      "timestamp": "2025-09-08T18:26:41.000901+00:00",
+      "details": "LinkedIn update",
+      "activity__name": "LinkedIn Post",
+      "activity__category": "social",
+      "activity__points_value": 50
+    },
+    {
+      "id": 2538,
+      "points_earned": 10,
+      "timestamp": "2025-09-08T17:21:50.843354+00:00",
+      "details": "Resource share: a bunch of stuff okay?",
+      "activity__name": "Resource Share",
+      "activity__category": "content",
+      "activity__points_value": 15
+    },
+    {
+      "id": 2535,
+      "points_earned": 10,
+      "timestamp": "2025-09-04T01:16:15.930909+00:00",
+      "details": "Resource share: https://careers.linkedin.com/pathways-programs/entry-level/apb\nLinkedIn APB application LIVE today -",
+      "activity__name": "Resource Share",
+      "activity__category": "content",
+      "activity__points_value": 15
+    },
+    {
+      "id": 2534,
+      "points_earned": 5,
+      "timestamp": "2025-09-01T00:00:00+00:00",
+      "details": "Beautiful chart activity for Yuehan_Z",
+      "activity__name": "LinkedIn Post",
+      "activity__category": "social",
+      "activity__points_value": 50
+    },
+    {
+      "id": 2533,
+      "points_earned": 5,
+      "timestamp": "2025-08-31T00:00:00+00:00",
+      "details": "Beautiful chart activity for Yuehan_Z",
+      "activity__name": "LinkedIn Post",
+      "activity__category": "social",
+      "activity__points_value": 50
+    },
+    {
+      "id": 2532,
+      "points_earned": 5,
+      "timestamp": "2025-08-30T00:00:00+00:00",
+      "details": "Beautiful chart activity for Yuehan_Z",
+      "activity__name": "LinkedIn Post",
+      "activity__category": "social",
+      "activity__points_value": 50
+    },
+    {
+      "id": 2531,
+      "points_earned": 5,
+      "timestamp": "2025-08-27T00:00:00+00:00",
+      "details": "Beautiful chart activity for Yuehan_Z",
+      "activity__name": "LinkedIn Post",
+      "activity__category": "social",
+      "activity__points_value": 50
+    },
+    {
+      "id": 2530,
+      "points_earned": 15,
+      "timestamp": "2025-08-25T00:00:00+00:00",
+      "details": "Beautiful chart activity for Yuehan_Z",
+      "activity__name": "Volunteer Work",
+      "activity__category": "engagement",
+      "activity__points_value": 15
+    },
+    {
+      "id": 2529,
+      "points_earned": 15,
+      "timestamp": "2025-08-24T00:00:00+00:00",
+      "details": "Beautiful chart activity for Yuehan_Z",
+      "activity__name": "Volunteer Work",
+      "activity__category": "engagement",
+      "activity__points_value": 15
+    },
+    {
+      "id": 2528,
+      "points_earned": 10,
+      "timestamp": "2025-08-23T00:00:00+00:00",
+      "details": "Beautiful chart activity for Yuehan_Z",
+      "activity__name": "Resource Share",
+      "activity__category": "content",
+      "activity__points_value": 15
+    },
+    {
+      "id": 2527,
+      "points_earned": 10,
+      "timestamp": "2025-08-22T00:00:00+00:00",
+      "details": "Beautiful chart activity for Yuehan_Z",
+      "activity__name": "Resource Share",
+      "activity__category": "content",
+      "activity__points_value": 15
+    },
+    {
+      "id": 2526,
+      "points_earned": 15,
+      "timestamp": "2025-08-18T00:00:00+00:00",
+      "details": "Beautiful chart activity for Yuehan_Z",
+      "activity__name": "Event Attendance",
+      "activity__category": "events",
+      "activity__points_value": 20
+    },
+    {
+      "id": 2525,
+      "points_earned": 15,
+      "timestamp": "2025-08-17T00:00:00+00:00",
+      "details": "Beautiful chart activity for Yuehan_Z",
+      "activity__name": "Event Attendance",
+      "activity__category": "events",
+      "activity__points_value": 20
+    },
+    {
+      "id": 2524,
+      "points_earned": 20,
+      "timestamp": "2025-08-15T00:00:00+00:00",
+      "details": "Beautiful chart activity for Yuehan_Z",
+      "activity__name": "Resume Upload",
+      "activity__category": "professional",
+      "activity__points_value": 20
+    },
+    {
+      "id": 2523,
+      "points_earned": 20,
+      "timestamp": "2025-08-13T00:00:00+00:00",
+      "details": "Beautiful chart activity for Yuehan_Z",
+      "activity__name": "Resume Upload",
+      "activity__category": "professional",
+      "activity__points_value": 20
+    }
+  ],
+  "is_lifetime_data": true,
+  "limit_applied": null
+}

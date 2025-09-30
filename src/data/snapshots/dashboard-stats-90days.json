@@ -1,0 +1,33 @@
+{
+  "current_period": {
+    "total_points": 203,
+    "activities_completed": 31,
+    "points_earned": 238,
+    "start_date": "2025-07-02",
+    "end_date": "2025-09-30"
+  },
+  "previous_period": {
+    "total_points": -35,
+    "activities_completed": 0,
+    "points_earned": 0,
+    "start_date": "2025-04-03",
+    "end_date": "2025-07-02"
+  },
+  "trends": {
+    "total_points": {
+      "change": 238,
+      "percentage": -680,
+      "direction": "up"
+    },
+    "activities_completed": {
+      "change": 31,
+      "percentage": 100,
+      "direction": "up"
+    },
+    "points_earned": {
+      "change": 238,
+      "percentage": 100,
+      "direction": "up"
+    }
+  }
+}

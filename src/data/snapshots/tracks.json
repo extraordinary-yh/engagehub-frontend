@@ -1,0 +1,29 @@
+[
+  {
+    "id": 2,
+    "name": "consulting",
+    "display_name": "Consulting",
+    "description": "Management consulting track focusing on strategy, operations, and business problem-solving.",
+    "is_active": true,
+    "created_at": "2025-09-13T02:43:10.653950Z",
+    "updated_at": "2025-09-13T02:43:10.653967Z"
+  },
+  {
+    "id": 3,
+    "name": "finance",
+    "display_name": "Finance",
+    "description": "Finance track focusing on investment banking, private equity, and financial services careers.",
+    "is_active": true,
+    "created_at": "2025-09-13T02:43:10.740541Z",
+    "updated_at": "2025-09-13T02:43:10.740563Z"
+  },
+  {
+    "id": 1,
+    "name": "tech",
+    "display_name": "Tech",
+    "description": "Technology and software development track focusing on coding, software engineering, and tech industry careers.",
+    "is_active": true,
+    "created_at": "2025-09-13T02:43:10.572488Z",
+    "updated_at": "2025-09-13T02:43:10.572515Z"
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "redemptions": [
+    {
+      "id": 9,
+      "reward": {
+        "name": "ATS Optimization Guide",
+        "image_url": null
+      },
+      "points_spent": 35,
+      "redeemed_at": "2025-09-24T02:50:55.182953+00:00",
+      "status": "pending",
+      "tracking_info": null,
+      "estimated_delivery": null
+    }
+  ]
+}

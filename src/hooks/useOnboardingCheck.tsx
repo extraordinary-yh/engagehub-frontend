@@ -16,10 +16,14 @@ export const useOnboardingCheck = () => {
     const checkOnboardingStatus = async () => {
       if (status === "loading") return;
       
-      // Check for demo mode - skip all onboarding checks
+      // Check for demo mode OR stable mode - skip all onboarding checks
       const isDemoMode = searchParams.get('demo') === 'true';
-      if (isDemoMode) {
-        console.log('🎯 Demo mode active - skipping onboarding checks');
+      const isStableMode = searchParams.get('stable') === 'true';
+      if (isDemoMode || isStableMode) {
+        // Silent for stable mode, visible for demo mode
+        if (!isStableMode) {
+          console.log('🎯 Demo mode active - skipping onboarding checks');
+        }
         setUserProfile({ onboarding_completed: true } as User);
         setIsCheckingOnboarding(false);
         return;

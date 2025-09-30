@@ -1,0 +1,114 @@
+{
+  "leaderboard": [
+    {
+      "rank": 1,
+      "user_id": 24,
+      "username": "Yuehan_Z",
+      "display_name": "Yuehan Z.",
+      "total_points": 238,
+      "points_this_period": 39,
+      "avatar_url": null,
+      "is_current_user": true
+    },
+    {
+      "rank": 2,
+      "user_id": 41,
+      "username": "Sebothy",
+      "display_name": "Seb F.",
+      "total_points": 18,
+      "points_this_period": 17,
+      "avatar_url": null,
+      "is_current_user": false
+    },
+    {
+      "rank": 3,
+      "user_id": 40,
+      "username": "FatimahOnanusi",
+      "display_name": "Fatimot O.",
+      "total_points": 21,
+      "points_this_period": 15,
+      "avatar_url": null,
+      "is_current_user": false
+    },
+    {
+      "rank": 4,
+      "user_id": 57,
+      "username": "sqishy123",
+      "display_name": "sqishy123",
+      "total_points": 10,
+      "points_this_period": 10,
+      "avatar_url": null,
+      "is_current_user": false
+    },
+    {
+      "rank": 5,
+      "user_id": 222,
+      "username": "nparany",
+      "display_name": "nparany",
+      "total_points": 7,
+      "points_this_period": 7,
+      "avatar_url": null,
+      "is_current_user": false
+    },
+    {
+      "rank": 6,
+      "user_id": 154,
+      "username": "lexisbright",
+      "display_name": "lexisbright",
+      "total_points": 7,
+      "points_this_period": 7,
+      "avatar_url": null,
+      "is_current_user": false
+    },
+    {
+      "rank": 7,
+      "user_id": 111,
+      "username": "phylnn",
+      "display_name": "phylnn",
+      "total_points": 7,
+      "points_this_period": 7,
+      "avatar_url": null,
+      "is_current_user": false
+    },
+    {
+      "rank": 8,
+      "user_id": 59,
+      "username": "peter086543",
+      "display_name": "peter086543",
+      "total_points": 7,
+      "points_this_period": 7,
+      "avatar_url": null,
+      "is_current_user": false
+    },
+    {
+      "rank": 9,
+      "user_id": 211,
+      "username": "kiranbk",
+      "display_name": "kiranbk",
+      "total_points": 7,
+      "points_this_period": 7,
+      "avatar_url": null,
+      "is_current_user": false
+    },
+    {
+      "rank": 10,
+      "user_id": 30,
+      "username": "Marilyn",
+      "display_name": "Marilyn",
+      "total_points": 81,
+      "points_this_period": 5,
+      "avatar_url": null,
+      "is_current_user": false
+    }
+  ],
+  "current_user_rank": {
+    "rank": 1,
+    "user_id": 24,
+    "username": "Yuehan_Z",
+    "display_name": "You",
+    "total_points": 238,
+    "points_this_period": 39,
+    "is_current_user": true
+  },
+  "total_participants": 79
+}

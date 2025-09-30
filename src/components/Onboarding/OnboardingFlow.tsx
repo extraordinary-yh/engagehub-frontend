@@ -15,11 +15,17 @@ export const OnboardingFlow = ({ userName }: OnboardingFlowProps) => {
   const [currentStep, setCurrentStep] = useState<'discord' | 'consent' | 'linkedin' | 'complete'>('discord');
   const [consentAccepted, setConsentAccepted] = useState<boolean | null>(null);
 
-  // Check for demo mode - skip all onboarding steps
+  // Check for demo mode OR stable mode - skip all onboarding steps
   useEffect(() => {
-    if (searchParams.get('demo') === 'true') {
+    const isDemoMode = searchParams.get('demo') === 'true';
+    const isStableMode = searchParams.get('stable') === 'true';
+    
+    if (isDemoMode) {
       console.log('🎯 Demo mode detected - skipping onboarding');
       router.push('/dashboard?demo=true');
+    } else if (isStableMode) {
+      // Silent redirect for stable mode
+      router.push('/dashboard?stable=true');
     }
   }, [searchParams, router]);
 

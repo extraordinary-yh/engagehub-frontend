@@ -6,6 +6,9 @@ const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL || 'http://localhost:8
 // Import performance profiler (will be enabled when utils are available)
 // import { PerformanceProfiler, NetworkAnalyzer } from '../utils/performanceProfiler';
 
+// Import snapshot loader for frozen state and fallback
+import { isSnapshotMode, loadSnapshot, hasSnapshot } from '../utils/snapshotLoader';
+
 // Types based on Django backend models
 export interface User {
   id: number;
@@ -304,6 +307,15 @@ class ApiService {
     const method = options.method || 'GET';
     const cacheKey = `${method}:${endpoint}:${activeToken ? 'auth' : 'noauth'}:${options.body ? JSON.stringify(options.body) : ''}`;
     
+    // STABLE MODE CHECK - Only for GET requests
+    if (method === 'GET' && isSnapshotMode()) {
+      const snapshotData = await loadSnapshot(endpoint);
+      if (snapshotData) {
+        return { data: snapshotData as T };
+      }
+      // Continue to live API if no snapshot exists (silent fallback)
+    }
+    
     // Check if this exact request is already in progress
     if (this.requestCache.has(cacheKey)) {
       return this.requestCache.get(cacheKey);
@@ -320,8 +332,8 @@ class ApiService {
       console.warn('⚠️  No auth token - request may be unauthorized:', url);
     }
 
-    // Create the actual request promise
-    const requestPromise = this.executeRequest<T>(url, endpoint, options, headers);
+    // Create the actual request promise with snapshot fallback
+    const requestPromise = this.executeRequestWithFallback<T>(url, endpoint, options, headers, method);
     
     // Cache the promise (only for GET requests to avoid caching mutations)
     if (method === 'GET') {
@@ -334,6 +346,33 @@ class ApiService {
     }
     
     return requestPromise;
+  }
+
+  private async executeRequestWithFallback<T>(
+    url: string,
+    endpoint: string,
+    options: RequestInit,
+    headers: Record<string, string>,
+    method: string
+  ): Promise<ApiResponse<T>> {
+    // Try the live API first
+    const response = await this.executeRequest<T>(url, endpoint, options, headers);
+
+    // If the request succeeded, return the response
+    if (response.data && !response.error) {
+      return response;
+    }
+
+    // If the request failed and it's a GET request, try snapshot fallback (silent)
+    if (method === 'GET' && (response.error || response.isNetworkError)) {
+      const snapshotData = await loadSnapshot(endpoint);
+      if (snapshotData) {
+        return { data: snapshotData as T };
+      }
+    }
+
+    // Return the original error response if no fallback available
+    return response;
   }
 
   private async executeRequest<T>(
@@ -375,8 +414,8 @@ class ApiService {
       if (!response.ok) {
         // Handle authentication-related errors
         if (response.status === 401 || response.status === 403) {
-          console.warn(`🚨 ${response.status} Authentication error detected, triggering logout`);
-          // Trigger logout event for components to handle
+          console.warn(`🚨 ${response.status} Authentication error detected`);
+          // Check if we're in demo mode - if so, redirect to stable mode
           this.handleUnauthorizedError();
         }
         
@@ -400,9 +439,22 @@ class ApiService {
     }
   }
 
-  // Handle 401 unauthorized errors by triggering logout
+  // Handle 401 unauthorized errors by triggering logout or fallback
   private handleUnauthorizedError(): void {
-    // Clear tokens immediately
+    // Check if we're in demo mode - if so, redirect to stable mode instead of logout
+    if (typeof window !== 'undefined') {
+      const searchParams = new URLSearchParams(window.location.search);
+      const isDemoMode = searchParams.get('demo') === 'true';
+      
+      if (isDemoMode) {
+        console.warn('⚠️  Demo mode: Authorization failed - switching to stable mode');
+        // Redirect to stable mode
+        window.location.href = window.location.pathname + '?stable=true';
+        return;
+      }
+    }
+    
+    // Normal mode: Clear tokens and trigger logout
     this.logout();
     
     // Dispatch custom event for components to listen to

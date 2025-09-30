@@ -1,0 +1,19 @@
+[
+  {
+    "id": 9,
+    "user": 24,
+    "user_username": "Yuehan_Z",
+    "incentive": 16,
+    "incentive_name": "ATS Optimization Guide",
+    "incentive_image_url": null,
+    "points_spent": 35,
+    "status": "pending",
+    "status_display": "Pending",
+    "delivery_details": {},
+    "tracking_info": null,
+    "estimated_delivery": null,
+    "admin_notes": "",
+    "redeemed_at": "2025-09-24T02:50:55.182953Z",
+    "processed_at": null
+  }
+]

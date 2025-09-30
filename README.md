@@ -47,6 +47,7 @@ A powerful full-stack community engagement platform that transforms how communit
 - **Real-Time Updates** - Live synchronization across all connected platforms
 - **API Rate Optimization** - Efficient external service integration
 - **Scalable Infrastructure** - Built to grow from small communities to enterprise scale
+- **📸 Snapshot System** - State preservation with automatic API fallback (see [SNAPSHOT_QUICKSTART.md](./SNAPSHOT_QUICKSTART.md))
 
 ## 🎯 Use Cases & Target Markets
 
@@ -134,6 +135,28 @@ http://localhost:3000/?demo=true
 ```
 
 Demo mode skips all verification and onboarding steps, providing instant access to the full dashboard. Perfect for presentations and showcases! See [DEMO_MODE.md](./DEMO_MODE.md) for details.
+
+### 📸 Snapshot System (State Preservation)
+
+Protect your frontend from backend changes with the Snapshot System:
+
+```bash
+# Record current API state (when backend is running)
+npm run snapshot:record
+
+# Use frozen/stable state (no API calls)
+http://localhost:3000/?stable=true
+
+# Automatic fallback (always enabled)
+# Works normally, falls back to snapshots on API errors
+```
+
+The system **automatically** uses frozen data when API calls fail, ensuring your site works even when:
+- Backend API changes or breaks
+- Backend is down or unavailable  
+- Network errors occur
+
+See [SNAPSHOT_QUICKSTART.md](./SNAPSHOT_QUICKSTART.md) for complete guide.
 
 ### Prerequisites
 

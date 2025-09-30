@@ -20,19 +20,30 @@ function HomeContent() {
 
   useEffect(() => {
     const checkUserStatus = async () => {
-      // Check for demo mode - auto-login with demo credentials
+      // Check for demo mode OR stable mode - both auto-login with demo credentials
       const isDemoMode = searchParams.get('demo') === 'true';
-      if (isDemoMode && status !== "loading") {
+      const isStableMode = searchParams.get('stable') === 'true';
+      const isAutoLoginMode = isDemoMode || isStableMode;
+      
+      if (isAutoLoginMode && status !== "loading") {
+        const modeLabel = isStableMode ? 'Stable' : 'Demo';
+        const redirectParam = isStableMode ? 'stable=true' : 'demo=true';
+        
         // If already authenticated, just redirect to dashboard
         if (status === "authenticated" && session?.user) {
-          console.log('🎯 Demo mode - already authenticated, redirecting to dashboard');
-          router.push('/dashboard?demo=true');
+          if (!isStableMode) {
+            console.log(`🎯 ${modeLabel} mode - already authenticated, redirecting to dashboard`);
+          }
+          router.push(`/dashboard?${redirectParam}`);
           return;
         }
         
         // If not authenticated, auto-login with demo credentials
         if (status === "unauthenticated" && !isDemoLoggingIn) {
-          console.log('🎯 Demo mode detected - auto-logging in with demo account');
+          // Silent mode for stable, visible for demo
+          if (!isStableMode) {
+            console.log(`🎯 ${modeLabel} mode detected - auto-logging in with demo account`);
+          }
           setIsDemoLoggingIn(true);
           
           try {
@@ -43,17 +54,37 @@ function HomeContent() {
             });
 
             if (result?.error) {
-              console.error('❌ Demo auto-login failed:', result.error);
+              // Demo mode: fall back to stable mode on auth failure
+              if (isDemoMode) {
+                console.warn('⚠️  Demo authentication failed - falling back to stable mode');
+                router.push('/dashboard?stable=true');
+                return;
+              }
+              
+              if (!isStableMode) {
+                console.error(`❌ ${modeLabel} auto-login failed:`, result.error);
+              }
               setIsDemoLoggingIn(false);
               // Fall through to show normal auth page with error
               return;
             }
             
-            console.log('✅ Demo auto-login successful - redirecting to dashboard');
+            if (!isStableMode) {
+              console.log(`✅ ${modeLabel} auto-login successful - redirecting to dashboard`);
+            }
             // The session will update and trigger another useEffect run
             // which will handle the redirect
           } catch (error) {
-            console.error('❌ Demo auto-login error:', error);
+            // Demo mode: fall back to stable mode on any error
+            if (isDemoMode) {
+              console.warn('⚠️  Demo authentication error - falling back to stable mode');
+              router.push('/dashboard?stable=true');
+              return;
+            }
+            
+            if (!isStableMode) {
+              console.error(`❌ ${modeLabel} auto-login error:`, error);
+            }
             setIsDemoLoggingIn(false);
           }
           return;
@@ -139,13 +170,8 @@ function HomeContent() {
       <div className="min-h-screen flex items-center justify-center bg-stone-100">
         <div className="text-center">
           <div className="text-xl text-stone-600 mb-4">
-            {isDemoLoggingIn ? "🎯 Loading demo..." : status === "loading" ? "Loading..." : "Checking account status..."}
+            {status === "loading" ? "Loading..." : "Checking account status..."}
           </div>
-          {isDemoLoggingIn && (
-            <div className="text-sm text-stone-500">
-              Signing in to demo account...
-            </div>
-          )}
         </div>
       </div>
     );
